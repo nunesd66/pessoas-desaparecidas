@@ -1,0 +1,37 @@
+<div id="container">
+
+  <header>
+    <h1>Detalhes</h1>
+  </header>
+
+  <div class="info-section">
+    <div class="photo-section">
+      <img src="{{entity?.urlFoto}}" alt="Sem foto" class="foto-img">
+    </div>
+    <div class="details-section">
+      <div class="info-item">
+        <strong>Nome:</strong> {{entity?.nome}}
+      </div>
+      <div class="info-item">
+        <strong>Idade:</strong> {{entity?.idade == 0 ? 'Não informado' : entity?.idade}}
+      </div>
+      <div class="info-item">
+        <strong>Sexo:</strong> {{entity?.sexo | sexo}}
+      </div>
+      <div class="info-item">
+        <strong>Data de Desaparecimento:</strong>
+        {{entity?.ultimaOcorrencia?.dtDesaparecimento | date:'dd/MM/yyyy'}}
+      </div>
+      <div class="info-item">
+        <strong>Local de Desaparecimento:</strong>
+        {{entity?.ultimaOcorrencia?.localDesaparecimentoConcat}}
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <div class="navigation-buttons">
+      <button routerLink="/list">Voltar</button>
+    </div>
+  </div>
+</div>

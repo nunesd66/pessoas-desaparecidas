@@ -1,0 +1,24 @@
+<div class="filters-container" [formGroup]="formGroup">
+
+  <div class="inputs">
+    <input type="text" placeholder="Nome" formControlName="nome">
+    <input type="text" placeholder="Idade" formControlName="idade">
+  
+    <select name="select" id="select" formControlName="sexo">
+      <option value="null" selected>
+        Selecione o Sexo
+      </option>
+      <option value="{{sexoEnum.MASCULINO}}">
+        {{sexoEnum.MASCULINO | sexo}}
+      </option>
+      <option value="{{sexoEnum.FEMININO}}">
+        {{sexoEnum.FEMININO | sexo}}
+      </option>
+    </select>
+  </div>
+
+  <div class="buttons">
+    <button (click)="clear()">Limpar</button>
+    <button (click)="shared()">Pesquisar</button>
+  </div>
+</div>

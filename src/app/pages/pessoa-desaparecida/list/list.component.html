@@ -1,0 +1,48 @@
+<div id="container">
+  
+  <header>
+    <h1>Lista de pessoas desaparecidas</h1>
+  </header>
+  
+  <app-filter (onSearch)="searchFilters()" (onClear)="clearFilters()"></app-filter>
+
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Sexo</th>
+      <th>Foto</th>
+      <th>Detalhes</th>
+    </tr>
+    <tr *ngFor="let pessoaDesaparecida of listPessoasDesaparecidas" class="trtest">
+      <td>{{pessoaDesaparecida.nome}}</td>
+      <td class="idade">{{pessoaDesaparecida.idade == 0 ? 'Não informado' : pessoaDesaparecida.idade}}</td>
+      <td>{{pessoaDesaparecida.sexo | sexo}}</td>
+      <td class="img">
+        <img class="foto" src="{{pessoaDesaparecida.urlFoto}}" alt="Sem foto">
+      </td>
+      <td class="detalis">
+        <span class="material-symbols-outlined" [routerLink]="detail(pessoaDesaparecida?.id)">
+          info
+        </span>
+      </td>
+    </tr>
+    
+  </table>
+    
+  <div class="paginate">
+    <div class="buttons">
+      <span (click)="previousPage()" class="material-symbols-outlined">
+        chevron_left
+      </span>
+    </div>
+    <div class="texto">
+      <span> Página {{page +1}} de {{totalPages}} </span>
+    </div>
+    <div class="buttons">
+      <span (click)="nextPage()" class="material-symbols-outlined">
+        chevron_right
+      </span>
+    </div>
+  </div>
+</div>

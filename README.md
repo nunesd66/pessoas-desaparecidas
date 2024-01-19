@@ -1,27 +1,31 @@
-# PessoasDesaparecidas
+# Angular UI - Pessoas Desaparecidas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+#### TODO: Sumário bonitão
 
-## Development server
+## Resumo (Introdução)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> Inicialmente, é um projeto que apenas consomem dados de pessoas desaparecidas do Mato Grosso e os exibem na tela.
 
-## Code scaffolding
+## "Insides" no decorrer do desenvolvimento (Considerações de desenvolvimento)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Confesso que depois de 3 meses sem por a mão em nada de front-end, esqueci conceitos básicos, mas nada que uma pesquisada no google não resolva. 
+>Tentei usar o Angular 17, mas vi que tiveram mudanças significativas, então optei por usar a versão 12, que tenho mais familiaridade. 
+> Vou fazer um README mais apresentável depois, estou preocupado em resolver o problema primeiro. 
+> Optei também por não mexer nas configurações padrões do typescript, como apontar erros de compilação ao declarar variáveis sem valor atribuído. 
+> Resolvi não usar nenhuma biblioteca de estilização, como Materialize ou PrimeNG, para tornar o desafio real.
 
-## Build
+## Tecnologias utilizadas:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular  12.2.17
+- Node: 14.15.0
+- NPM: 6.14.8
+- NVM: 1.1.9
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instação local
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> É bem simples, tenha todas as tecnologias utilizadas em suas respectivas versões, e na pasta raíz do projeto rode os seguintes comandos:
+> ```$ cd angular-ui/```
+> ```$ npm i```
+> ```$ ng serve```
+> A partir disso sua aplicação estará rodando.
