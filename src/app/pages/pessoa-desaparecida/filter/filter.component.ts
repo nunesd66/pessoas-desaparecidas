@@ -33,18 +33,18 @@ export class FilterComponent implements OnInit {
   }
 
   shared(): void {
-    const nome = this.formGroup.controls.nome.value;
+    const nome = this.formGroup.controls['nome'].value;
     if (nome != '') {
       sessionStorage.setItem('nome', nome.trim());
     }
 
-    const idade = this.formGroup.controls.idade.value;
+    const idade = this.formGroup.controls['idade'].value;
     if (idade != '') {
       sessionStorage.setItem('faixaIdadeInicial', idade);
       sessionStorage.setItem('faixaIdadeFinal', idade);
     }
     
-    const sexo = this.formGroup.controls.sexo.value;
+    const sexo = this.formGroup.controls['sexo'].value;
     if (sexo != null) {
       sessionStorage.setItem('sexo', sexo);
     }
