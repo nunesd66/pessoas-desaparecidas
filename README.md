@@ -4,7 +4,7 @@
 
 ## Resumo (Introdução)
 
-> Inicialmente, é um projeto que apenas consomem dados de pessoas desaparecidas do Mato Grosso e os exibem na tela.
+> Inicialmente, é um projeto que apenas consomem dados de uma API de pessoas desaparecidas do Mato Grosso e os exibem na tela.
 
 ## "Insides" no decorrer do desenvolvimento (Considerações de desenvolvimento)
 
